@@ -8,11 +8,19 @@
 ------------------------- */
 body {
     margin: 0;
-    padding: 0;
-    width: 1920px;
+    ;
     font-family: 'Work Sans', sans-serif;
+    width: 1920px;
     border: 1px solid red;
     text-align: center;
+}
+
+main {
+    align-items: center;
+}
+
+.container {
+    padding: 50px 230px;
 }
 
 .title-color {
@@ -21,6 +29,10 @@ body {
 
 .description-color {
     color: #727272;
+}
+
+.button-color {
+    color: #FF900E;
 }
 
 /*-------------------------
@@ -88,7 +100,40 @@ body {
     font-size: 20px;
     color: white;
     border-radius: 8px;
-    background-color: rgb(255, 136, 0);
+    background-color: #FF900E;
     border-style: none;
     margin-top: 15px;
+}
+
+.banner-thumbnail {
+    margin-bottom: 30px;
+}
+
+/*-------------------------
+    Main Section Style
+------------------------- */
+/* Blog Section */
+.blog-container {
+    display: flex;
+    gap: 75px;
+    align-items: center;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+    margin-left: 24px;
+}
+
+.blog-info {
+    text-align: left;
+    padding: 0px 50px;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 20px;
 }
