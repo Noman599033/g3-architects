@@ -31,6 +31,10 @@ main {
     color: #727272;
 }
 
+.view-color {
+    color: #424242;
+}
+
 .button-color {
     color: #FF900E;
 }
@@ -136,4 +140,73 @@ main {
     font-weight: 600;
     font-size: 45px;
     margin-bottom: 20px;
+}
+
+/* Some Facts Section */
+.facts-details {
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.facts-details .banner-description {
+    padding-right: 800px;
+}
+
+.overview-container {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.overview-details {
+    height: 242px;
+    width: 242px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+}
+
+.overview-details:hover{
+    border-color: red;
+    background-color: gold;
+    animation: animat 1s linear 1s infinite alternate;
+}
+
+@keyframes animat {
+    0% {
+        background-color: red;
+        transform: translateX(100px) rotate(0deg) ;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    75% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: rgb(255, 0, 0);
+        transform: translateX(-100px) rotate(360deg) ;
+    }
+}
+
+
+.overview-details img {
+    margin-top: 40px;
+}
+
+.view-number {
+    font-weight: 600;
+    font-size: 45px;
+    margin: 10px 0px 5px 0px;
+}
+
+.view-description {
+    font-weight: 600;
+    font-size: 20px;
 }
