@@ -10,5 +10,85 @@ body {
     margin: 0;
     padding: 0;
     width: 1920px;
+    font-family: 'Work Sans', sans-serif;
     border: 1px solid red;
+    text-align: center;
+}
+
+.title-color {
+    color: #131313;
+}
+
+.description-color {
+    color: #727272;
+}
+
+/*-------------------------
+    Header Section Style
+------------------------- */
+/* Logo & Nav Bar Part */
+.header {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 230px;
+}
+
+.logo-title {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 70px;
+}
+
+.navbar-list li {
+    list-style: none;
+}
+
+.navbar-list li a {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: #424242;
+}
+
+/* Banner Section */
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner-details {
+    width: 862px;
+    height: 225px;
+    margin-top: 50px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.btn {
+    width: 180px;
+    height: 64px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    border-radius: 8px;
+    background-color: rgb(255, 136, 0);
+    border-style: none;
+    margin-top: 15px;
 }
