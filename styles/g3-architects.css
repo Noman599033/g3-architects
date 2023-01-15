@@ -142,6 +142,47 @@ main {
     margin-bottom: 20px;
 }
 
+/* Features Section */
+.features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+}
+
+.features-details {
+    width: 586px;
+    height: 982px;
+    border: 1px solid seagreen;
+}
+
+.features-thumbnail {
+    width: 800px;
+    height: 1059px;
+}
+
+.features-image {
+    width: 708px;
+    height: 982px;
+    background-image: url(../images/architect.png);
+    margin: 0px 0px 50px 90px;
+    position: absolute;
+}
+
+.features-thumbnail .btn {
+    width: 342px;
+    height: 200px;
+    font-weight: 700;
+    font-size: 65px;
+    position: relative;
+    margin: 860px 460px 0px 0px;
+}
+
+.f-thumb-title {
+    font-weight: 500;
+    font-size: 25px;
+}
+
 /* Some Facts Section */
 .facts-details {
     text-align: left;
@@ -165,7 +206,7 @@ main {
     border-radius: 8px;
 }
 
-.overview-details:hover{
+.overview-details:hover {
     border-color: red;
     background-color: gold;
     animation: animat 1s linear 1s infinite alternate;
@@ -174,7 +215,7 @@ main {
 @keyframes animat {
     0% {
         background-color: red;
-        transform: translateX(100px) rotate(0deg) ;
+        transform: translateX(100px) rotate(0deg);
     }
 
     25% {
@@ -191,7 +232,7 @@ main {
 
     100% {
         background-color: rgb(255, 0, 0);
-        transform: translateX(-100px) rotate(360deg) ;
+        transform: translateX(-100px) rotate(360deg);
     }
 }
 
