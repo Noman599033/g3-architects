@@ -23,6 +23,28 @@ main {
     padding: 50px 230px;
 }
 
+.section-title {
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+/*---- Button Part ----*/
+
+.btn {
+    width: 180px;
+    height: 64px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    border-radius: 8px;
+    background-color: #FF900E;
+    border-style: none;
+    margin-top: 15px;
+}
+
+/*---- Color Part ----*/
+
 .title-color {
     color: #131313;
 }
@@ -39,10 +61,12 @@ main {
     color: #FF900E;
 }
 
+
 /*-------------------------
     Header Section Style
 ------------------------- */
-/* Logo & Nav Bar Part */
+
+/*---- Logo & Nav Bar Part ----*/
 .header {
     background-color: rgba(255, 144, 14, 0.1);
 }
@@ -75,7 +99,10 @@ main {
     color: #424242;
 }
 
-/* Banner Section */
+/*-------------------------
+    Banner Section Style
+------------------------- */
+
 .banner-container {
     display: flex;
     flex-direction: column;
@@ -97,26 +124,23 @@ main {
     margin-top: 0;
 }
 
-.btn {
-    width: 180px;
-    height: 64px;
-    font-weight: 600;
-    font-size: 20px;
-    color: white;
-    border-radius: 8px;
-    background-color: #FF900E;
-    border-style: none;
-    margin-top: 15px;
-}
-
 .banner-thumbnail {
     margin-bottom: 30px;
 }
 
+
+
+
 /*-------------------------
     Main Section Style
 ------------------------- */
-/* Blog Section */
+
+
+
+/*-------------------------
+   Blog Section Style
+------------------------- */
+
 .blog-container {
     display: flex;
     gap: 75px;
@@ -136,13 +160,10 @@ main {
     padding: 0px 50px;
 }
 
-.section-title {
-    font-weight: 600;
-    font-size: 45px;
-    margin-bottom: 20px;
-}
+/*-------------------------
+    Features Section Style
+------------------------- */
 
-/* Features Section */
 .features-container {
     display: flex;
     justify-content: center;
@@ -172,6 +193,11 @@ main {
     margin-bottom: 20px;
 }
 
+.f-blog:hover {
+    background-color: #ffc078;
+    border: 1px dotted #ff0101;
+}
+
 .f-blog {
     text-align: left;
     height: 111px;
@@ -181,7 +207,7 @@ main {
     padding: 25px;
 }
 
-.f-blog .f-blog-title{
+.f-blog .f-blog-title {
     margin: 0px 0px 10px 0px;
 }
 
@@ -208,7 +234,10 @@ main {
     font-size: 25px;
 }
 
-/* Some Facts Section */
+/*-----------------------------
+    Some Facts  Section Style
+------------------------------- */
+
 .facts-details {
     text-align: left;
     margin-bottom: 100px;
@@ -218,10 +247,10 @@ main {
     padding-right: 800px;
 }
 
+/*---- OverView Part with Animation ----*/
 .overview-container {
     display: flex;
     justify-content: space-evenly;
-
 }
 
 .overview-details {
@@ -261,7 +290,6 @@ main {
     }
 }
 
-
 .overview-details img {
     margin-top: 40px;
 }
@@ -275,4 +303,36 @@ main {
 .view-description {
     font-weight: 600;
     font-size: 20px;
+}
+
+/*-----------------------------
+    Sponsorship Section Style
+------------------------------ */
+
+.sponser-details {
+    padding: 0px 300px;
+}
+
+/*---- Brand Logos Part ----*/
+.brand-container {
+    margin-top: 70px;
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    filter: grayscale(1);
+}
+
+/*-------------------------
+    Footer Section Style
+------------------------- */
+
+/*---- Copyright Part ----*/
+.copyright {
+    height: 100px;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
