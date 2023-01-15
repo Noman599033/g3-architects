@@ -497,7 +497,7 @@ main {
  }
 
  /*---- Large devices ----*/
- @media only screen and (min-width:993px) and (max-width: 1312px){
+ @media only screen and (min-width:993px) and (max-width: 1399px){
     .container{
         width: 100%;
         padding: 20px;
