@@ -240,8 +240,8 @@ main {
 
 /*---- OverView Part with Animation ----*/
 .overview-container {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .overview-details {
@@ -423,19 +423,19 @@ main {
     Media Query Style
 ------------------------- */
 
- /* Small devices */
+ /*---- Small devices ----*/
  @media only screen and (max-width:688px){
     .container{
         width: 100%;
         padding: 20px;
     }
-    .nav, .navbar-list,.banner-container, .blog-container, .features-container, .overview-container, .brand-container {
+    .nav, .navbar-list,.banner-container, .blog-container, .features-container, .brand-container {
         flex-direction: column;
         align-items: flex-start;
         row-gap: 20px;
     }
 
-    .blogs,  .member-lists {
+    .blogs, .overview-container,  .member-lists {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 20px;
     }
@@ -446,6 +446,60 @@ main {
 
     .sponser-details {
         padding:0px 10px;
+    }
+ }
+
+ /*---- Medium devices ----*/
+ @media only screen and (min-width:689px) and (max-width: 992px){
+    .container{
+        width: 100%;
+        padding: 20px;
+    }
+    .nav, .banner-container, .blog-container, .features-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .brand-container{
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+    }
+
+    .blogs, .overview-container, .member-lists {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    .banner-thumbnail img, .blogs img, .features-image img {
+        width: 100%;
+    }
+
+    .sponser-details {
+        padding:0px 10px;
         text-align: left;
+    }
+ }
+
+ /*---- Large devices ----*/
+ @media only screen and (min-width:993px) and (max-width: 1312px){
+    .container{
+        width: 100%;
+        padding: 20px;
+    }
+    .banner-container, .blog-container, .features-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .blogs, .overview-container, .member-lists {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+    }
+
+    .banner-thumbnail img, .blogs img, .features-image img {
+        width: 100%;
     }
  }
