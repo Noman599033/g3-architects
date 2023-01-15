@@ -176,11 +176,11 @@ main {
     text-align: left;
     border-left: 5px solid #FF900E;
     height: 106px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
-.box {
-    margin: 0px 90px 0px 20px;
+.features-info .section-title {
+    margin: 0px 0px 0px 20px;
 }
 
 .features-blog {
@@ -242,6 +242,7 @@ main {
 .overview-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
 }
 
 .overview-details {
