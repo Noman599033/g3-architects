@@ -26,6 +26,10 @@ main {
     margin-bottom: 20px;
 }
 
+.section-description {
+    width: 500px;
+}
+
 /*---- Button Part ----*/
 
 .btn {
@@ -182,6 +186,7 @@ main {
 .features-info .section-title {
     margin: 0px 0px 0px 20px;
 }
+
 
 .features-blog {
     height: 171px;
@@ -448,6 +453,14 @@ main {
     .sponser-details {
         padding:0px 10px;
     }
+    .features-thumbnail .btn {
+        width: 150px;
+        height: 150px;
+        font-weight: 700;
+        font-size: 35px;
+        position: relative;
+        margin: 600px 400px 0px 0px;
+    }
  }
 
  /*---- Medium devices ----*/
@@ -458,7 +471,7 @@ main {
     }
     .nav, .banner-container, .blog-container, .features-container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 20px;
     }
 
